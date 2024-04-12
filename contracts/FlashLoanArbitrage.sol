@@ -135,6 +135,7 @@ contract FlashLoanArbitrage is FlashLoanReceiverBase {
             amount
         );
 
+
         // we try to sell ETH with higher price and buy it back with low price to make profit
         if (uniswapPrice > sushiswapPrice) {
             require(
